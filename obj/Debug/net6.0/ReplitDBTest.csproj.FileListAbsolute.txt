@@ -1,0 +1,15 @@
+/home/runner/ReplitDBTest/bin/Debug/net6.0/ReplitDbTest
+/home/runner/ReplitDBTest/bin/Debug/net6.0/ReplitDbTest.deps.json
+/home/runner/ReplitDBTest/bin/Debug/net6.0/ReplitDbTest.runtimeconfig.json
+/home/runner/ReplitDBTest/bin/Debug/net6.0/ReplitDbTest.dll
+/home/runner/ReplitDBTest/bin/Debug/net6.0/ref/ReplitDbTest.dll
+/home/runner/ReplitDBTest/bin/Debug/net6.0/ReplitDbTest.pdb
+/home/runner/ReplitDBTest/obj/Debug/net6.0/ReplitDBTest.csproj.AssemblyReference.cache
+/home/runner/ReplitDBTest/obj/Debug/net6.0/ReplitDBTest.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/ReplitDBTest/obj/Debug/net6.0/ReplitDBTest.AssemblyInfoInputs.cache
+/home/runner/ReplitDBTest/obj/Debug/net6.0/ReplitDBTest.AssemblyInfo.cs
+/home/runner/ReplitDBTest/obj/Debug/net6.0/ReplitDBTest.csproj.CoreCompileInputs.cache
+/home/runner/ReplitDBTest/obj/Debug/net6.0/ReplitDbTest.dll
+/home/runner/ReplitDBTest/obj/Debug/net6.0/ref/ReplitDbTest.dll
+/home/runner/ReplitDBTest/obj/Debug/net6.0/ReplitDbTest.pdb
+/home/runner/ReplitDBTest/obj/Debug/net6.0/ReplitDBTest.genruntimeconfig.cache

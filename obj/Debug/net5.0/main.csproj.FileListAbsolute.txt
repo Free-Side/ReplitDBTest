@@ -1,0 +1,5 @@
+/home/runner/ReplitDBTest/obj/Debug/net5.0/main.csproj.AssemblyReference.cache
+/home/runner/ReplitDBTest/obj/Debug/net5.0/main.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/ReplitDBTest/obj/Debug/net5.0/main.AssemblyInfoInputs.cache
+/home/runner/ReplitDBTest/obj/Debug/net5.0/main.AssemblyInfo.cs
+/home/runner/ReplitDBTest/obj/Debug/net5.0/main.csproj.CoreCompileInputs.cache
