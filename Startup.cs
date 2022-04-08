@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -9,11 +10,12 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ReplitDbClient;
 
 namespace ReplitDbTest {
   public class Startup {
     public Startup(IConfiguration configuration) {
-      Configuration = configuration;
+      this.Configuration = configuration;
     }
 
     public IConfiguration Configuration { get; }
@@ -28,6 +30,10 @@ namespace ReplitDbTest {
           builder.AllowAnyHeader();
         });
       });
+
+      services.AddScoped<IReplitDbClient>(
+        _ => new ReplitDBClient(Environment.GetEnvironmentVariable("REPLIT_DB_URL"))
+      );
 
       services.AddControllersWithViews();
 
@@ -48,7 +54,7 @@ namespace ReplitDbTest {
         app.UseExceptionHandler("/Home/Error");
         app.UseForwardedHeaders();
         // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-        // app.UseHsts();
+        app.UseHsts();
       }
 
       // AMcC - https redirection doesn't play nicely with repl.it

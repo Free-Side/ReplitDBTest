@@ -1,6 +1,13 @@
 {
   "version": 1,
   "dependencies": {
-    "net6.0": {}
+    "net6.0": {
+      "ReplitDbClient": {
+        "type": "Direct",
+        "requested": "[0.0.1-beta3, )",
+        "resolved": "0.0.1-beta3",
+        "contentHash": "IaNvqdgK4VpLmQ+p3hfq9o5uE7ZbETlnoYzo2MPwLpixz4CYsw3YzjE1tk9ahKax6XFXOFHeQoJvu3EB1USS4Q=="
+      }
+    }
   }
 }

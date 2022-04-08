@@ -1,10 +1,40 @@
+@model HomeViewModel
 @{
-  ViewData["Title"] = "Home Page";
+  ViewData["Title"] = "ReplitDB Client Test";
 }
 
 <div>
-  <h1>Welcome</h1>
-  <p>
-    View the code for this application on <a href="https://replit.com/@@KumuPaul/aspnet-core-5-api">Replit.com</a>.
-  </p>
+  <h1>ReplitDB View</h1>
+  <div>
+    <form action="/home/set" method="post">
+      <label>
+        Key:
+        <input type="text" name="key" />
+      </label>
+      <label>
+        Value:
+        <input type="text" name="value" />
+      </label>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+  <table>
+    <thead>
+    <tr><td>Key</td><td>Value</td><td>Remove</td></tr>
+    </thead>
+    <tbody>
+    @foreach (var kvp in Model.Data) {
+      <tr><td>@kvp.Key</td><td>@kvp.Value</td><td><a href="#" onclick="deleteEntry('@kvp.Key')"> 🗑</a></td></tr>
+    }
+    </tbody>
+  </table>
 </div>
+<script>
+async function deleteEntry(key) {
+  await fetch(`/home/delete/${key}`, {
+    method: 'DELETE'
+  });
+
+  window.location.reload();
+}
+</script>
